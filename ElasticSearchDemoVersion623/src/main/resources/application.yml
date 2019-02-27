@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: ElasticSearchDemoVersion623
+
+  data:
+    elasticsearch:
+      cluster-name: my-elasticseach #tianfs
+      cluster-nodes: 172.16.60.41:9300 #172.16.60.225:9300
+      port: 9300
+      hostName: 172.16.60.41
+      pool: 5
+
+security:
+  basic:
+    enabled: false
+
+server:
+  port: 8080
+  context-path: /
+  session:
+    cookie:
+      http-only: true
+
